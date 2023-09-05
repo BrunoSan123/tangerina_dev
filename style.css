@@ -944,6 +944,14 @@ textarea {
 	margin-bottom: 1.5em;
 }
 
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
 .ultimo_post_grid {
 	max-width: 1200px;
 	margin-left: auto;
@@ -954,6 +962,12 @@ textarea {
 	margin-top: 10%;
 }
 
+@media (max-width: 900px) {
+	.ultimo_post_grid {
+		flex-direction: column;
+	}
+}
+
 .ultimo_post_grid .grid_child {
 	position: relative;
 	width: 50%;
@@ -961,9 +975,23 @@ textarea {
 	color: #fff;
 }
 
+@media (max-width: 900px) {
+	.ultimo_post_grid .grid_child {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+}
+
 .ultimo_post_grid .grid_child .grid_child_content {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), black 71%);
 	border-radius: 30px;
+}
+
+@media (max-width: 900px) {
+	.ultimo_post_grid .grid_child .grid_child_content {
+		margin-bottom: 5%;
+		height: 80vh;
+	}
 }
 
 .ultimo_post_grid .grid_child a {
@@ -975,6 +1003,13 @@ textarea {
 	position: absolute;
 	top: 60%;
 	text-align: center;
+	padding-left: 5%;
+}
+
+@media (max-width: 900px) {
+	.ultimo_post_grid .grid_child .description {
+		top: 5% !important;
+	}
 }
 
 .ultimo_post_grid .grid_child img {
@@ -991,9 +1026,22 @@ textarea {
 	gap: 5%;
 }
 
+@media (max-width: 900px) {
+	.ultimo_post_grid .the_grid {
+		display: block;
+		margin-bottom: 5%;
+	}
+}
+
 .ultimo_post_grid .the_grid .grid_child_content {
 	height: 43vh;
 	position: relative;
+}
+
+@media (max-width: 900px) {
+	.ultimo_post_grid .the_grid .grid_child_content {
+		height: 80vh;
+	}
 }
 
 .ultimo_post_grid .the_grid .grid_child_content .description {
@@ -1010,6 +1058,71 @@ textarea {
 
 #site-navigation ul {
 	padding-top: 1%;
+}
+
+.populars {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.populars h2 {
+	text-align: center !important;
+}
+
+.popular_posts {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 50vh;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	box-shadow: 2px 2px 8px #aaa;
+	border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+	.popular_posts {
+		height: 80vh;
+	}
+}
+
+.popular_posts strong {
+	text-decoration: none;
+	font-size: 19px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.popular_posts a {
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+}
+
+.popular_posts img {
+	height: 60%;
+	width: 100%;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.popular_posts_slider {
+	padding-left: 1% !important;
+}
+
+.author {
+	text-align: center;
+	color: #aaa;
+}
+
+.slick-prev::before, .slick-next::before {
+	color: #aaa !important;
 }
 
 /*# sourceMappingURL=style.css.map */

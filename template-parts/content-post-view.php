@@ -1,5 +1,7 @@
 <?php
 
+use ElementorPro\Modules\ThemeBuilder\Conditions\Author;
+
 $args=array(
     'post_type'=>'post',
     'post_per_page'=>5,
@@ -13,7 +15,7 @@ $popular_posts= new WP_Query($args);
 
 <?php if($popular_posts->have_posts()):?>
     <h2>Posts mais lidos</h2>
-    <ul>
+    <ul class="popular_posts_slider">
         <?php while($popular_posts->have_posts()): $popular_posts->the_post()?>
             <li>
                 <div class="popular_posts">
@@ -22,7 +24,8 @@ $popular_posts= new WP_Query($args);
                     the_post_thumbnail('medium');
                 }
              ?>
-                <a href="<?php the_permalink()?>"><?php the_title()?></a>
+                <a href="<?php the_permalink()?>"><strong><?php the_title()?></strong><br><p>Leia mais</p></a>
+                <div class="author"><?php echo get_the_author()?>-<?php echo the_date()?></div>
                 </div>
             </li>
         <?php 
