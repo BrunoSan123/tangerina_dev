@@ -82,3 +82,7 @@ endif
 ?>
 </div>
 </section>
+
+<section class="populars">
+    <?php get_template_part('template-parts/content','post-view')?>
+</section>

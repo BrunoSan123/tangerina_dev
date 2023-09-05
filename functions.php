@@ -176,3 +176,25 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function add_post_views_meta(){
+	$args=array(
+		'post_type'=>'post',
+		'posts_per_page'=>-1,
+
+	);
+
+	$posts = new WP_Query($args);
+
+	if ($posts->have_posts()) :
+        while ($posts->have_posts()) : $posts->the_post();
+            $post_id = get_the_ID();
+            $views = get_post_meta($post_id, 'post_views', true);
+            if (empty($views)) {
+                add_post_meta($post_id, 'post_views', 0, true);
+            }
+        endwhile;
+    endif;
+}
+
+add_action('init', 'add_post_views_meta');
+
