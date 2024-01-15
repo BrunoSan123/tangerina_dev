@@ -53,6 +53,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 // Import variables and mixins.
 @import "abstracts/abstracts";
 
+.page-template-page-home{
+	color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -103,3 +107,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "components/home.scss";
 @import "components/slider.scss";
+@import "components/content/_home_banner.scss";
+@import "components/content/_cards.scss";
+

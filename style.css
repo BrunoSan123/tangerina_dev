@@ -48,6 +48,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+.page-template-page-home {
+	color: #fff;
+}
+
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -1123,6 +1127,59 @@ a {
 
 .slick-prev::before, .slick-next::before {
 	color: #aaa !important;
+}
+
+.front_banner {
+	background: #eb832b;
+	width: 100%;
+	height: 63vh;
+}
+
+.cards_section {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.cards_section article {
+	width: 30%;
+	background: orange;
+	margin-bottom: 5%;
+}
+
+.cards_section section {
+	width: 100% !important;
+}
+
+.cards_section section:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.cards_section .card_child_item img {
+	width: 100%;
+}
+
+.card_clidren {
+	display: flex;
+}
+
+.card_clidren .card_child_item {
+	width: 50%;
+	height: 70vh;
+}
+
+.card_clidren .card_child_item img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.description-card {
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */

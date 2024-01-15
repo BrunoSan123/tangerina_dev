@@ -1,0 +1,50 @@
+.cards_section{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+
+  article{
+    width: 30%;
+    background: orange;
+    margin-bottom: 5%;
+    
+  }
+
+  section{
+    width: 100% !important;
+    &:nth-child(odd){
+      flex-direction: row-reverse;
+    }
+  }
+
+  .card_child_item{
+    img{
+      width:100%;
+    }
+  }
+}
+
+.card_clidren{
+  display: flex;
+
+  .card_child_item{
+    width: 50%;
+    height: 70vh;
+
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.description-card{
+  padding-left: 3%;
+  padding-right: 3%;
+
+}
