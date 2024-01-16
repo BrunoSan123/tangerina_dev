@@ -22,3 +22,7 @@
 <div class="cards_section">
     <?php get_template_part('template-parts/content','dual')?>
 </div>
+
+<div class="image_slider">
+    <?php get_template_part('template-parts/content','slider')?>
+</div>

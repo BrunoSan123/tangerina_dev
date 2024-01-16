@@ -9,7 +9,7 @@
 /* eslint-disable space-before-blocks */
 /* eslint-disable linebreak-style */
 jQuery(document).ready(function($){
-    $('.popular_posts_slider').slick({
+    $('.tang_slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,

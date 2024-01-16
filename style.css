@@ -1129,6 +1129,12 @@ a {
 	color: #aaa !important;
 }
 
+.image_slider {
+	transform: scale(0.9);
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+
 .front_banner {
 	background: #eb832b;
 	width: 100%;
