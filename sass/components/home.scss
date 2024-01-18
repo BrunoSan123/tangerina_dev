@@ -94,9 +94,10 @@ a{
 }
 
 #site-navigation{
-	background: #d9c0c0 !important;
+	background: #fff !important;
     justify-content: flex-start;
     gap: 5%;
+    position: fixed;
     
     ul{
         padding-top: 1%;

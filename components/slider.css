@@ -1,11 +1,11 @@
 .slick-prev::before, .slick-next::before {
-	color: #aaa !important;
+  color: #aaa !important;
 }
 
 .image_slider {
-	transform: scale(0.9);
-	padding-left: 5% !important;
-	padding-right: 5% !important;
+  transform: scale(0.9);
+  padding-left: 5% !important;
+  padding-right: 5% !important;
 }
 
 /*# sourceMappingURL=slider.css.map */
